@@ -62,7 +62,7 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 
 ## API Description
 
-<h3 id="get_captcha_id">Get Captcha id (获取验证码ID)</h3>
+<a name="get_captcha_id">Get Captcha id (获取验证码ID)</a>
 #### Request 
 ``` GET: /j/new_captcha ```
 #### Usage
@@ -82,7 +82,8 @@ The captcha id.
 
 
 
-<h3 id="get_captcha">Get Captcha (获取验证码)</h3>
+<a name="get_captcha"></a>
+### Get Captcha (获取验证码)
 #### Request
 ``` GET: /misc/captcha ```
 #### Usage
@@ -101,7 +102,8 @@ none
 
 
 
-<h3 id="get_form">Get Form (请求表单html)</h3>
+<a name="get_form"></a>
+### Get Form (请求表单html)
 #### Request
 ``` GET /j/misc/login_form ```
 #### Usage
@@ -115,7 +117,8 @@ none
 
 
 
-<h3 id="login">Login (登录)</h3>
+<a name="login"></a>
+### Login (登录)
 #### Request
 ``` POST: /j/login ```
 #### Parameters
@@ -183,7 +186,8 @@ value `sync_channel_list` ,use to sync the playlist
 
 
 
-<h3 id="hot_channels">Hot Channels (热门兆赫)</h3>
+<a name="hot_channels"></a>
+### Hot Channels (热门兆赫)
 #### Request
 ``` GET: /j/explore/hot_channels ```
 #### Usage
@@ -196,7 +200,8 @@ the hot channel's list
 none
 
 
-<h3 id="#up_trending_channels">Up Trending Channels (上升最快兆赫)</h3>
+<a name="#up_trending_channels"></a>
+### Up Trending Channels (上升最快兆赫)
 #### Request
 ``` GET: /j/explore/up_trending_channels ```
 #### Usage
@@ -210,7 +215,8 @@ none
 
 
 
-<h3 id="#search_channel">Search Channel (搜索兆赫)</h3>
+<a name="#search_channel"></a>
+### Search Channel (搜索兆赫)
 #### Request
 ``` GET: /j/explore/search ```
 #### Usage
@@ -275,7 +281,8 @@ the channels array
 	 
 
 
-<h3 id="genre">Genre (歌曲类型筛选)</h3>
+<a name="genre"></a>
+### Genre (歌曲类型筛选)
 #### Request
 ``` GET /j/explore/genre ```
 #### Usage
@@ -323,7 +330,8 @@ the channel list
 
 
 
-<h3 id="#get_channel_info">Get Channel Info (获取兆赫信息)</h3>
+<a name="#get_channel_info"></a>
+### Get Channel Info (获取兆赫信息)
 #### Request
 ``` GET /j/explore/get_channel_info ```
 #### Usage
@@ -354,7 +362,8 @@ the brief intro of channel
 
 
 
-<h3 id="channel_detail">Channel Detail (兆赫详情)</h3>
+<a name="channel_detail"></a>
+### Channel Detail (兆赫详情)
 #### Request:
 ``` GET: /j/explore/channel_detail ```
 #### Usage:
@@ -509,7 +518,8 @@ the id of channel
 
 
 
-<h3 id="except_report">Except Report (问题报告)</h3>
+<a name="except_report"></a>
+### Except Report (问题报告)
 #### Request
 ``` GET: /j/except_report ```
 #### Usage
@@ -534,7 +544,8 @@ the operation status
 
 
 
-<h3 id="get_login_channels">Get Login Channels(登录后获取频道列表)</h3>
+<a name="get_login_channels"></a>
+### Get Login Channels(登录后获取频道列表)
 #### Request
 ``` GET: /j/explore/get_login_chls ```
 #### Usage
@@ -598,7 +609,8 @@ favorite channels and recently listend channels
 
 
 
-<h3 id="transfer_data">Transfer Data (数据提交)</h3>
+<a name="transfer_data"></a>
+### Transfer Data (数据提交)
 #### Request
 ```GET /j/transfer_data```
 #### Usage
@@ -626,7 +638,8 @@ the number of data that transfered
 
 
 
-<h3 id="clear_anonymous_data">Clear Anonymous Data (清除匿名数据)</h3>
+<a name="clear_anonymous_data"></a>
+### Clear Anonymous Data (清除匿名数据)
 #### Request
 ``` POST: /j/clear_anonymous_data ```
 #### Usage
@@ -640,7 +653,8 @@ none
 
 
 
-<h3 id="record">Record Explanation (记录)</h3>
+<a name="record"></a>
+### Record Explanation (记录)
 #### Request
 ``` GET: /j/mine/rec_explanation ```
 #### Usage
@@ -654,7 +668,8 @@ none
 	
 
 
-<h3 id="fav_channel">Fav Channel (收藏兆赫)</h3>
+<a name="fav_channel"></a>
+### Fav Channel (收藏兆赫)
 #### Request
 ``` GET: /j/explore/fav_channel ```
 #### Usage
@@ -680,7 +695,8 @@ the status of the operation
 
 
 
-<h3 id="unfav_channel">Unfav Channel (取消收藏兆赫)</h3>
+<a name="unfav_channel"></a>
+### Unfav Channel (取消收藏兆赫)
 #### Request
 ``` GET: /j/explore/unfav_channel ```
 #### Usage
@@ -706,7 +722,8 @@ the status of the operation
 
 
 
-<h3 id="get_favorite_channel">Get Favorite Channel (我的收藏)</h3>
+<a name="get_favorite_channel"></a>
+### Get Favorite Channel (我的收藏)
 #### Request
 ``` GET: /j/explore/get_fav_chl ```
 #### Usage
@@ -738,7 +755,8 @@ a channel result
 
 
 
-<h3 id="#get_recommend_channel">Get Recommend Channel (推荐频道，试试这些)</h3>
+<a name="#get_recommend_channel"></a>
+### Get Recommend Channel (推荐频道，试试这些)
 #### Request
 ``` GET: /j/explore/get_recommend_chl ```
 #### Usage
@@ -769,7 +787,8 @@ a channel result
 
 
 
-<h3 id="is_favorite_channel">Is Favorite Channel (判断是否收藏)</h3>
+<a name="is_favorite_channel"></a>
+### Is Favorite Channel (判断是否收藏)
 #### Request
 ``` GET: /j/explore/is_fav_channel ```
 #### Usage
@@ -799,7 +818,8 @@ whether the song is favorited
 
 
 
-<h3 id=""add_channel_tag>Add Channel Tag (添加标签)</h3>
+<a name="add_channel_tag"></a>
+### Add Channel Tag (添加标签)
 #### Request
 ``` POST: /j/explore/add_channel_tags ```
 #### Usage
@@ -832,7 +852,8 @@ the operation status
 
 
 
-<h3 id="add_board_post">Add Board Post (添加评论)</h3>
+<a name="add_board_post"></a>
+### Add Board Post (添加评论)
 #### Request
 ``` POST: /j/explore/add_board_post ```
 #### Usage
@@ -878,7 +899,8 @@ the commiter and the channel ownner's info
 
 
 
-<h3 id="delete_board_post">Delete Board Post (删除评论)</h3>
+<a name="delete_board_post"></a>
+### Delete Board Post (删除评论)
 #### Request
 ``` POST: /j/explore/delete_board_post ```
 #### Usage
@@ -905,7 +927,8 @@ the operation status
 
 
 
-<h3 id="get_my_tags">Get My Tags (我加过的标签)</h3>
+<a name="get_my_tags"></a>
+### Get My Tags (我加过的标签)
 #### Request
 ``` GET: /j/explore/get_my_tags ```
 #### Usage
@@ -935,7 +958,8 @@ error message
 
 
 
-<h3 id="select_channel">Select Channel (选择频道)</h3>
+<a name="select_channel"></a>
+### Select Channel (选择频道)
 #### Request
 ``` POST: /j/explore/channel_select ```
 #### Usage
@@ -955,7 +979,8 @@ none
 
 
 
-<h3 id="change_channel">Change Channel (改变频道)</h3>
+<a name="change_channel"></a>
+### Change Channel (改变频道)
 #### Request
 ``` GET: /j/explore/change_channel ```
 #### Usage
@@ -982,7 +1007,8 @@ none
 
 
 
-<h3 id="remove_recent_channel">Remove Recent Channel (删除最近收听频道)</h3>
+<a name="remove_recent_channel"></a>
+### Remove Recent Channel (删除最近收听频道)
 #### Request
 ``` POST: /j/explore/rm_recent_chl ```
 #### Usage
@@ -1007,7 +1033,8 @@ operation status
 
 
 
-<h3 id="player_behavior">Player Behavior (播放器操作：红心，垃圾桶，跳过)</h3>
+<a name="player_behavior"></a>
+### Player Behavior (播放器操作：红心，垃圾桶，跳过)
 #### Request
 ``` GET: /j/mine/playlist ```
 #### Usage
@@ -1089,7 +1116,8 @@ a 10 digits 16 hex random number
 
 
 
-<h3 id="logout">Logout (注销)</h3>
+<a name="logout"></a>
+### Logout (注销)
 #### Request
 ``` GET: /partner/logout```
 #### Usage
@@ -1108,7 +1136,8 @@ none
 
 
 
-<h3 id="play_record">Play Record (播放记录)</h3>
+<a name="play_record"></a>
+### Play Record (播放记录)
 #### Request
 ``` GET: /j/play_record ```
 #### Usage
@@ -1152,7 +1181,8 @@ the songlist and detail infos
 
 
 
-<h3 id="fav_channels">Fav Channels (收藏兆赫)</h3>
+<a name="fav_channels"></a>
+### Fav Channels (收藏兆赫)
 #### Request
 ``` GET /j/fav_channels ```
 #### Usage
@@ -1205,7 +1235,8 @@ the channel list
 
 
 
-<h3 id="artist_suggest">Artist Suggest (歌手猜测)</h3>
+<a name="artist_suggest"></a>
+### Artist Suggest (歌手猜测)
 #### Request
 ``` GET: /j/artist_suggest ```
 #### Usage
@@ -1230,7 +1261,8 @@ the artists name
 
 
 
-<h3 id="add_artist">Add Artist (添加喜爱歌手)</h3>
+<a name="add_artist"></a>
+### Add Artist (添加喜爱歌手)
 #### Request
 ``` POST: /j/add_artist ```
 #### Usage
@@ -1255,7 +1287,8 @@ a artist html string
 
 
 
-<h3 id="remove_artist">Remove Artist (删除喜爱歌手)</h3>
+<a name="remove_artist"></a>
+### Remove Artist (删除喜爱歌手)
 #### Request
 ``` POST: /j/remove_artist ```
 #### Usage
@@ -1280,7 +1313,8 @@ the operation status
 
 
 
-<h3 id="interest">Interest (歌曲加心)</h3>
+<a name="interest"></a>
+### Interest (歌曲加心)
 #### Request
 ``` POST: /j/song/<song_id>/interest ```
 #### Usage
@@ -1308,7 +1342,8 @@ the key `ck` in your cookie
 
 
 
-<h3 id="undo_ban">Undo Ban (歌曲移出垃圾桶)</h3>
+<a name="undo_ban"></a>
+### Undo Ban (歌曲移出垃圾桶)
 #### Request
 ``` POST: /j/song/<song_id>/undo_ban ```
 #### Usage
@@ -1332,7 +1367,8 @@ the key `ck` in your cookie
 
 
 
-<h3 id="person_channel_tags">Person Channel Tags (个人频道标签)</h3>
+<a name="person_channel_tags"></a>
+### Person Channel Tags (个人频道标签)
 #### Request
 ``` GET: /j/explore/person_channnel_tags ``` // channnel seems to be a typo
 #### Usage
@@ -1346,7 +1382,8 @@ none
 
 
 
-<h3 id="person_tag_test">Person Tag Test (个人标签测试)</h3>
+<a name="person_tag_test"></a>
+### Person Tag Test (个人标签测试)
 #### Request
 ``` GET: /j/explore/person_tag_test?accept=1 ```
 #### Usage
@@ -1361,7 +1398,8 @@ none
 
 
 
-<h3 id="is_tags_song_exists">Is Tags Song Exists (指定标签歌曲是否存在)</h3>
+<a name="is_tags_song_exists"></a>
+### Is Tags Song Exists (指定标签歌曲是否存在)
 #### Request
 ``` GET: /j/explore/is_tags_song_exists ```
 #### Usage
@@ -1376,7 +1414,8 @@ none
 
 
 
-<h3 id="channel_personal_tag">Channel Personal Tag (个人频道标签)</h3>
+<a name="channel_personal_tag"></a>
+### Channel Personal Tag (个人频道标签)
 #### Request
 ``` GET: /j/explore/channel_personnel_tag   // personnel seems to be a typo```
 #### Usage
@@ -1416,7 +1455,8 @@ the tags' name and id
 
 
 
-<h3 id="show_time_machine">Show Time Machine (是否显示Time Machine)</h3>
+<a name="show_time_machine"></a>
+### Show Time Machine (是否显示Time Machine)
 #### Request
 ``` GET: /j/timemachine/show_time_machine ```
 #### Usage
@@ -1430,7 +1470,8 @@ none
 
 
 
-<h3 id="discard_time_machine_tips">Discard Time Machine Tips (不显示Time Machine)</h3>
+<a name="discard_time_machine_tips"></a>
+### Discard Time Machine Tips (不显示Time Machine)
 #### Request
 ``` GET: /j/timemachine/disgard_tm_tip ``` // disgard seems to be a typo...
 #### Usage
