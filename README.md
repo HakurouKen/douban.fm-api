@@ -59,6 +59,9 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 * [Show Time Machine (是否显示Time Machine)](#show_time_machine)
 * [Discard Time Machine Tips (不显示Time Machine)](#discard_time_machine_tips)
 
+### Others (其他)
+* [CID (部分频道ID与名称对照表)](#cid)
+
 
 ## API Description
 
@@ -1518,3 +1521,42 @@ none
 `0`
 #### Example
 none
+
+
+<a name="cid"></a>
+### CID (部分频道ID与名称对照表)
+cid | name
+---|:---
+-3 | 红心兆赫
+0 | 私人兆赫
+1 | 华语
+2 | 欧美
+3 | 七零
+4 | 八零
+5 | 九零
+6 | 粤语
+7 | 摇滚
+8 | 民谣
+9 | 轻音乐
+10 | 电影原声
+11 | Party
+12 | KFC情人节
+13 | 爵士
+14 | 电子
+15 | 说唱
+16 | R&B
+17 | 日语
+18 | 韩语
+19 | PUMA
+20 | 女声
+21 | 城市音乐会
+22 | 法语
+23 | 道奇酷博
+24 | 纪念张国荣
+25 | 柯本
+26 | 公告牌之外
+27 | 古典
+28 | 动漫
+29 | ThinkPad
+30 | BMW
+... | ...
