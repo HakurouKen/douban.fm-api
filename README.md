@@ -37,7 +37,7 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 * [Change Channel (改变频道)](#change_channel)
 * [Remove Recent Channel (删除最近收听频道)](#remove_recent_channel)
 * [Player Behavior (播放器操作：红心，垃圾桶，跳过)](#player_behavior)
-* [Logout (注销)](#logout)
+* [Logout (注销)](#_logout)
 
 ### My FM (我的FM)
 * [Play Record (播放记录)](#play_record)
@@ -72,15 +72,15 @@ Get the captcha id.
 none
 #### Response
 The captcha id.
-#### Example:
+#### Example
 **Request**
-
+```
 	GET: /j/new_captcha
-
+```
 **Response**
-
+```
 	f002Un7LjuEW29TOGGRR4han:en
-
+```
 
 
 <a name="get_captcha"></a>
@@ -96,6 +96,7 @@ Get the captcha.
 	- *l* : large (400x60)
 * *id*<br/>
 	the id get from new_captcha
+
 #### Response
 a captcha image
 #### Example
@@ -138,6 +139,7 @@ value `sync_channel_list` ,use to sync the playlist
 * *remember*<br/> 
 	- *on* ： remember
 	- *undefined* : do not remember
+
 #### Response
 * Success:
 	* *r*<br/>
@@ -151,9 +153,10 @@ value `sync_channel_list` ,use to sync the playlist
 	the error number
 	* *r*<br/>
 	value `1` , represent for failed
+
 #### Examples
 **Request**
-	
+```	
 	/* POST: /j/login */
 	source:radio
 	alias: my_email_here@xmail.com
@@ -161,9 +164,9 @@ value `sync_channel_list` ,use to sync the playlist
 	captcha_solution: profit
 	captcha_id: Rc6zxTUxDa7crcSXjdpi3tyz:en
 	task: sync_channel_list
-
+```
 **Response**
-
+```javascript
 	{
 	    "user_info": {
 	        "ck": "o7hG",
@@ -184,7 +187,7 @@ value `sync_channel_list` ,use to sync the playlist
 	    },
 	    "r": 0
 	}
-
+```
 
 
 <a name="hot_channels"></a>
@@ -229,15 +232,16 @@ the key word you want to search by
 the start of the channel result, default value is `0`
 * *limit(optional)*<br/>
 limit the number of the channels, default value is `20`
+
 #### Response
 the channels array
 #### Example
 **Request**
-
+```
 	GET: /j/explore/search?query=linkin%20park
-
+```
 **Response**
-
+```javascript
 	{
 	    status: true,
 	    data: {
@@ -279,7 +283,7 @@ the channels array
 	        total: 1
 	    }
 	}
-	 
+```	 
 
 
 <a name="genre"></a>
@@ -295,15 +299,16 @@ the id of the channel genre
 the start of the channel result, default value is `0`
 * *limit(optional)*<br/>
 limit the number of the channels, default value is `20`
+
 #### Response
 the channel list
 #### Example
 **Request**
-
+```
 	GET: /j/explore/genre?gid=335&start=1&limit=1
-
+```
 **Response**
-	
+```javascript	
 	{
 	    status: true,
 	    data: {
@@ -328,7 +333,7 @@ the channel list
 	        total: 97
 	    }
 	}
-
+```
 
 
 <a name="#get_channel_info"></a>
@@ -340,15 +345,16 @@ Get the channel info by channel id.
 #### Parameters
 * *cid*<br/>
 the channel id
+
 #### Response
 the brief intro of channel
 #### Example
 **Request**
-
+```
 	GET: /j/explore/get_channel_info?cid=32
-
+```
 **Response**
-	
+```javascript	
 	{
 	    status: true,
 	    data: {
@@ -360,7 +366,7 @@ the brief intro of channel
 	        }
 	    }
 	}
-
+```
 
 
 <a name="channel_detail"></a>
@@ -372,6 +378,7 @@ Get the channel detail by the channel id , including creator info , channel boar
 #### Parameters:
 * *channel_id*<br/>
 the id of channel
+
 #### Response:
 * Success:
 	* *status*<br/>
@@ -383,13 +390,14 @@ the id of channel
 	false
 	* *msg*<br/>
 	the error message
+
 #### Example
 **Request**
-
+```
 	GET: /j/explore/channel_detail?channel_id=177
-
+```
 **Response**
-	
+```javascript	
 	{
 	    "status": true,
 	    "data": {
@@ -516,7 +524,7 @@ the id of channel
 	        "auto_create": 0
 	    }
 	}
-
+```
 
 
 <a name="except_report"></a>
@@ -532,17 +540,18 @@ value `ra006`
 the user agent string
 * *reason*
 the report content
+
 #### Response
 the operation status
 #### Example
 **Request**
-
+```
 	GET: /j/except_report?kind=ra006&env=Mozilla/5.0%20(Windows%20NT%206.1;%20WOW64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/33.0.1750.117%20Safari/537.36+&reason=test
-
+```
 **Response**
-
+```javascript
 	{r:0}
-
+```
 
 
 <a name="get_login_channels"></a>
@@ -554,15 +563,16 @@ Use for init the channel after login.
 #### Parameters
 * *uk*<br/>
 the user's number id.
+
 #### Response
 favorite channels and recently listend channels
 #### Example
 **Request**
-
+```
 	GET: /j/explore/get_login_chls?uk=64965813
-
+```
 **Response**
-
+```javascript
 	// omit some data...
 	{
 	    status: true,
@@ -607,7 +617,7 @@ favorite channels and recently listend channels
 	        }
 	    }
 	}
-
+```
 
 
 <a name="transfer_data"></a>
@@ -619,15 +629,16 @@ Transfer the listened data when not login.
 #### Parameters
 * *ck*
 the key `ck` in your cookie
+
 #### Response
 the number of data that transfered
 #### Example
 **Request**
-
+```
 	GET /j/transfer_data
-
+```
 **Response**
-
+```javascript
 	{
 	    "r": 0,
 	    "transfer_info": {
@@ -636,7 +647,7 @@ the number of data that transfered
 	        "played": 0
 	    }
 	}
-
+```
 
 
 <a name="clear_anonymous_data"></a>
@@ -678,22 +689,23 @@ Add the channel to the favorites.
 #### Parameters
 * *cid*<br/>
 the id of the song
+
 #### Response
 the status of the operation
 #### Examples
 **Request**
-
+```
 	GET: /j/explore/fav_channel?cid=1
-
+```
 **Response**
-
+```javascript
 	{
 		status: true,
 		data: {
 			res: 1
 		}
 	}	
-
+```
 
 
 <a name="unfav_channel"></a>
@@ -705,22 +717,23 @@ Remove the channel from the favorites.
 #### Parameters
 * *cid*<br/>
 the id of the channel
+
 ### Response
 the status of the operation
 #### Example
 **Request**
-
+```
 	GET: /j/explore/unfav_channel?cid=2
-
+```
 **Response**
-	
+```javascript	
 	{
 		status: true,
 			data: {
 				res: 1
 		}
 	}
-
+```
 
 
 <a name="get_favorite_channel"></a>
@@ -732,15 +745,16 @@ Get a channel from favorites.
 #### Parameters
 * *ofavs*<br/>
 a string join with `|` and the channel's id. The channels includes your recently listened channels(最近收听) and your favorite channels that had already added (我的收藏).
+
 #### Response
 a channel result
 #### Examples
 **Request**
-
+```
 	GET: /j/explore/get_fav_chl?ofavs=1004355|1000740|1001609|1003949
-
+```
 **Response**
-	
+```javascript	
 	{
 	    status: true,
 	    data: {
@@ -752,7 +766,7 @@ a channel result
 	        }
 	    }
 	}
-
+```
 
 
 
@@ -765,15 +779,16 @@ Get a recommend channel.
 #### Parameters
 * *orecs*<br/>
 a string join with `|` and the channel's id. The channels includes your recently listened channels(最近收听) and your favorite channels(我的收藏).
+
 #### Response
 a channel result
 #### Examples
 **Request**
-
+```
 	GET: /j/explore/get_recommend_chl?orecs=1002754|49088|1004880|2|1004355|1000740|1001609|1003949
-
+```
 **Response**
-	
+```javascript	
 	{
 	    status: true,
 	    data: {
@@ -785,7 +800,7 @@ a channel result
 	        }
 	    }
 	}
-
+```
 
 
 <a name="is_favorite_channel"></a>
@@ -799,15 +814,16 @@ Judge if a song is in the favorites.
 user id
 * *cid*<br/>
 the channel id
+
 #### Response
 whether the song is favorited
 #### Examples
 **Request**
-
+```
 	GET: /j/explore/is_fav_channel?uk=64965813&cid=1003949
-
+```
 **Response**
-	
+```javascript	
 	{
 	    status: true,
 	    data: {
@@ -816,7 +832,7 @@ whether the song is favorited
 	        }
 	    }
 	}
-
+```
 
 
 <a name="add_channel_tag"></a>
@@ -832,25 +848,26 @@ the tags you want to add (encoded)
 the channel id
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 the operation status
 #### Examples
 **Request**
-
+```
 	/* POST: /j/explore/add_channel_tags */
 	tags: +%E5%85%89%E8%89%AF+%E6%A2%81%E9%9D%99%E8%8C%B9
 	cid: 1
 	ck: your_ck_key
-
+```
 **Response**
-	
+```javascript	
 	{
 		"status":true,
 		"data":{
 			"result":1
 		}
 	}
-
+```
 
 
 <a name="add_board_post"></a>
@@ -866,18 +883,19 @@ the comment you want to add
 the channel's id
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 the commiter and the channel ownner's info
 #### Example
 **Request**
-
+```
 	/* POST: /j/explore/add_board_post */
 	text: test...
 	channel_id: 1
 	ck: your_ck_key
-
+```
 **Response**
-
+```javascript
 	{
 	    "status": true,
 	    "data": {
@@ -896,7 +914,7 @@ the commiter and the channel ownner's info
 	        }
 	    }
 	}
-
+```
 
 
 
@@ -913,19 +931,20 @@ the id of the comment
 the author's (your) number id
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 the operation status
 #### Examples
 **Request**
-
+```
 	pid: 24720
 	author_id: 64965813
 	ck: your_ck_key
-
+```
 **Response**
-	
+```javascript	
 	{"status":true}
-
+```
 
 
 <a name="get_my_tags"></a>
@@ -937,18 +956,21 @@ Get the tag you have added.
 #### Parameters
 * *channel_id*<br/>
 the channel id
+
 #### Response
-*Success:
+* Success:
 the tags you added most and added in this channel
-*Fail:
+
+* Fail:
 error message
+
 #### Example
 **Request**
-	
+```	
 	GET: /j/explore/get_my_tags?channel_id=2
-
+```
 **Response**
-
+```javascript
 	{
 	    status: true,
 	    data: {
@@ -956,7 +978,7 @@ error message
 	        my_channel_tags: []
 	    }
 	}
-
+```
 
 
 <a name="select_channel"></a>
@@ -973,6 +995,7 @@ channel id
 	- *c* : the channel belongs to your favorites shown in the pages
 * *ck*
 the key `ck` in your cookie
+
 #### Response
 ""
 #### Example
@@ -1001,6 +1024,7 @@ goal channel's id
 	- *com_chls* : brand FM (品牌兆赫)
 	- *recent_chls* : recently listened (最近收听) &&  hot channel (热门周爱河) && up trending channel (上升最快)
 	- *search* : search (搜索)
+
 #### Response
 an operation flag
 #### Example
@@ -1019,19 +1043,20 @@ Remove recent listened channel .
 the channel id
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 operation status
 #### Example
 **Request**
-
+```
 	/* POST: /j/explore/rm_recent_chl */
 	cid: 2
 	ck: your_ck_key
-
+```
 **Response**
-
+```javascript
 	{"status":true}
-
+```
 
 
 <a name="player_behavior"></a>
@@ -1060,16 +1085,17 @@ for the normal user(not pro) , value `64`
 value `mainsite`
 * *r*<br/>
 a 10 digits 16 hex random number
+
 #### Resopnse
 *e* : the operate status
 *others* : a playlist
 #### Example
 **Request**
-
+```
 	GET: /j/mine/playlist?type=s&sid=1395079&pt=3.3&channel=0&pb=64&from=mainsite&r=41c64da174
-
+```
 **Response**
-	
+```javascript	
 	// omit some data...
 	{
 	    "r": 0,
@@ -1114,10 +1140,10 @@ a 10 digits 16 hex random number
 	    }, {...
 	    }]
 	}
+```
 
 
-
-<a name="logout"></a>
+<a name="_logout"></a>
 ### Logout (注销)
 #### Request
 ``` GET: /partner/logout```
@@ -1152,15 +1178,16 @@ value `::` plus the key `bid` in your cookie
 	- *liked*: hearted song
 	- *banned*: trashed song
 	- *played*: played song
+
 #### Response
 the songlist and detail infos
 #### Example
 **Request**
-	
+```	
 	http://douban.fm/j/play_record?ck=your_ck_key&spbid=your_spbid_key&type=liked
-
+```
 **Response**
-	
+```javascript	
 	//omit some data...
 	{
 		"total": 2465,
@@ -1179,7 +1206,7 @@ the songlist and detail infos
 		],
 		"song_type": "liked"
 	}
-
+```
 
 
 <a name="fav_channels"></a>
@@ -1191,15 +1218,16 @@ Get all favorite channels.
 #### Parameters
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 the channel list
 #### Example
 **Request**
-
+```
 	GET: /j/fav_channels?ck=your_ck_key
-
+```
 **Response**
-
+```javascript
 	// omit some data...
 	{
 		"channels": [{
@@ -1233,7 +1261,7 @@ the channel list
 		...
 		]
 	}
-
+```
 
 
 <a name="artist_suggest"></a>
@@ -1245,21 +1273,22 @@ Guess the aritst by the word you typed.
 #### Parameters
 * *q*<br/>
 word
+
 #### Response
 the artists name
 #### Example
 **Request**
-
+```
 	GET: /j/artist_suggest?q=nick
-
+```
 **Response**
-
+```
 	nick glennie-smith, hans zimmer, harry gregso
 	nick cave and warren ellis
 	nick barker and alana
 	nick barker
 	Nicky Hopkins
-
+```
 
 
 <a name="add_artist"></a>
@@ -1273,19 +1302,20 @@ Add favorite artist.
 the key `ck` in your cookie
 * *name*<br/>
 the artist's name
+
 #### Response
 a artist html string
 #### Example
-** Request**
-
+**Request**
+```
 	/* POST: /j/add_artist */
 	ck: your_ck_key
 	name: Jay-Z And Linkin Park
-
+```
 **Response**
-	
+```	
 	"{\"html\":\"<li class=\\\"j a_add_artist\\\">Coldplay<\/li><li class=\\\"j a_add_artist\\\">Eminem<\/li><li class=\\\"j a_add_artist\\\">Maroon 5<\/li><li class=\\\"j a_add_artist\\\">Evanescence<\/li>\"}"
-
+```
 
 
 <a name="remove_artist"></a>
@@ -1299,19 +1329,20 @@ Delete an artist you liked.
 the key `ck` in your cookie
 * *name*<br/>
 the artist's name
+
 #### Response
 the operation status
 #### Example
-** Request**
-
+**Request**
+```
 	POST: /j/add_artist
 	ck: your_ck_key
 	name: Jay-Z And Linkin Park
-
+```
 **Response**
-	
+```javascript	
 	{"r":0}
-
+```
 
 
 <a name="interest"></a>
@@ -1328,19 +1359,20 @@ the key `ck` in your cookie
 * *action*<br/>
 	- *y* : like
 	- *n* : dislike
+
 #### Response
 `y`
 #### Example
 **Request**
-	
+```	
 	/* POST: /j/song/747585/interest */
 	action: n
 	ck: your_ck_key
-
+```
 **Response**
-
+```
 	y
-
+```
 
 
 <a name="undo_ban"></a>
@@ -1354,18 +1386,19 @@ Remove a song out of ban list.
 the song's id
 * *ck*<br/>
 the key `ck` in your cookie
+
 #### Response
 `y`
 #### Example
 **Request**
-	
+```	
 	/* POST: /j/song/33149/undo_ban */
 	ck: your_ck_key
-
+```
 **Response**
-
+```
 	y
-
+```
 
 
 <a name="person_channel_tags"></a>
@@ -1392,6 +1425,7 @@ Get whether the user are participate the person tag's test.
 #### Parameters
 * *accept*<br/>
 	`1` or `0`
+
 #### Response
 the result
 #### Example
@@ -1408,6 +1442,7 @@ Check whether the song meet the conditions exists.
 #### Parameters
 * *tags*<br/>
 tags join with `_`
+
 #### Response
 whether the song exists
 #### Example
@@ -1418,7 +1453,7 @@ none
 <a name="channel_personal_tag"></a>
 ### Channel Personal Tag (个人频道标签)
 #### Request
-``` GET: /j/explore/channel_personnel_tag   // personnel seems to be a typo```
+``` GET: /j/explore/channel_personnel_tag ```   // personnel seems to be a typo
 #### Usage
 Get the tags that fit the user.
 #### Parameters
@@ -1427,11 +1462,11 @@ none
 the tags' name and id
 #### Example
 **Request**
-	
+```	
 	GET: /j/explore/channel_personnel_tag
-
+```
 **Response**
-
+```javascript
 	// omit some data...
 	{
 	    "status": true,
@@ -1453,7 +1488,7 @@ the tags' name and id
 	        }]
 	    }
 	}
-
+```
 
 
 <a name="show_time_machine"></a>
