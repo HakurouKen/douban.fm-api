@@ -62,7 +62,8 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 
 ## API Description
 
-<a name="get_captcha_id">Get Captcha id (获取验证码ID)</a>
+<a name="get_captcha_id"></a>
+### Get Captcha id (获取验证码ID)
 #### Request 
 ``` GET: /j/new_captcha ```
 #### Usage
