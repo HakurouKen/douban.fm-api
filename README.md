@@ -1,4 +1,4 @@
-#Douban FM API Pirvate Documentation
+#Douban FM API Private Documentation
 
 ## Explanation
 This is **not** a Douban FM offical API doucmentation. **Please only use it for learning purposes.** All the request is based on the root `http://douban.fm` .
