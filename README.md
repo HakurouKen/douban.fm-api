@@ -409,7 +409,7 @@ the id of channel
 	        "channel": {
 	            "creator": {
 	                "url": "http:\/\/site.douban.com\/douban.fm\/",
-	                "chls": [{
+	                "chls": [{l
 	                    "tags": ["周杰伦", "陈奕迅", "很经典的"],
 	                    "cover": "http:\/\/img3.douban.com\/img\/fmadmin\/icon\/26383.jpg",
 	                    "id": 1,
@@ -1090,8 +1090,9 @@ value `mainsite`
 a 10 digits 16 hex random number
 
 #### Resopnse
-*e* : the operate status
-*others* : a playlist
+* *e* : the operate status
+* *others* : a playlist
+
 #### Example
 **Request**
 ```
