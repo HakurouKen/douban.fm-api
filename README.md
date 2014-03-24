@@ -1048,6 +1048,7 @@ Get new playlist when player status change.
 	- *r* : Like a song.
 	- *s* : Skip a song.
 	- *b* : Trash a song.
+	- *p* : Use to get a song list when the song in playlist was all played.
 * *sid*<br/>
 the song's id
 * *pt*<br/>
