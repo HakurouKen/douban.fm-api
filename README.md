@@ -987,7 +987,7 @@ error message
 <a name="select_channel"></a>
 ### Select Channel (选择频道)
 #### Request
-``` POST: /j/explore/channel_select ```
+``` POST: /j/channel_select ```
 #### Usage
 Tell the server you select a channel.
 #### Parameters
