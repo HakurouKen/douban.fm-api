@@ -773,7 +773,7 @@ a channel result
 
 
 
-<a name="#get_recommend_channel"></a>
+<a name="get_recommend_channel"></a>
 ### Get Recommend Channel (推荐频道，试试这些)
 #### Request
 ``` GET: /j/explore/get_recommend_chl ```
