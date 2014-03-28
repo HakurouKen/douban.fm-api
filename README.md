@@ -27,7 +27,7 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 * [Fav Channel (收藏兆赫)](#fav_channel)
 * [Unfav Channel (取消收藏兆赫)](#unfav_channel)
 * [Get Favorite Channel (我的收藏)](#get_favorite_channel)
-* [Get Recommend Channel (推荐频道，试试这些)](get_recommend_channel)
+* [Get Recommend Channel (推荐频道，试试这些)](#get_recommend_channel)
 * [Is Favorite Channel (判断是否收藏)](#is_favorite_channel)
 * [Add Channel Tag (添加标签)](#add_channel_tag)
 * [Add Board Post (添加评论)](#add_board_post)
