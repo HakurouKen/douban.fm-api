@@ -1025,7 +1025,7 @@ goal channel's id
 	- *promotion_chls* : recommend channels (试试这些)
 	- *fav_chls* : favorites (我的收藏)
 	- *com_chls* : brand FM (品牌兆赫)
-	- *recent_chls* : the recently listened channel( the channel under the private/hearted , recently listened (最近收听) &&  hot channel (热门兆赫) && up trending channel (上升最快) will added to this part ).
+	- *recent_chls* : the recently listened channel( the channel under the private/hearted , recently listened which do not belongs to any channel lists such as similar song(听相似的歌) &&  hot channel (热门兆赫) && up trending channel (上升最快) will added to this part ).
 	- *search* : search (搜索)
 
 #### Response
