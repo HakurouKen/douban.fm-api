@@ -1018,14 +1018,14 @@ current channel's id
 * *tcid*<br/>
 goal channel's id
 * *area*<br/>
-	which part of the page the channel belongs to
+	which part of the page the channel you wanna change belongs to
 	- *songchannel* : the fm player init
 	- *system_chls* : private (私人兆赫) / hearted (红心兆赫)
 	- *history_chls* : lastest heard (最近收听)
 	- *promotion_chls* : recommend channels (试试这些)
 	- *fav_chls* : favorites (我的收藏)
 	- *com_chls* : brand FM (品牌兆赫)
-	- *recent_chls* : recently listened (最近收听) &&  hot channel (热门兆赫) && up trending channel (上升最快)
+	- *recent_chls* : the recently listened channel( the channel under the private/hearted , recently listened (最近收听) &&  hot channel (热门兆赫) && up trending channel (上升最快) will added to this part ).
 	- *search* : search (搜索)
 
 #### Response
