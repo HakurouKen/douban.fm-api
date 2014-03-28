@@ -994,7 +994,7 @@ Tell the server you select a channel.
 * *cid*<br/>
 channel id
 * *ctype*
-	- *r* :  the channel belongs to system channels shown in the pages
+	- *r* :  the recent channel ( which belongs to system channels ) shown in the pages ( but not the private channel or heart channel ) 
 	- *c* : the channel belongs to your favorites shown in the pages
 * *ck*
 the key `ck` in your cookie
