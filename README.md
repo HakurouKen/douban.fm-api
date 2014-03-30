@@ -668,7 +668,7 @@ none
 
 
 
-<a name="record"></a>
+<a name="record_explanation"></a>
 ### Record Explanation (记录)
 #### Request
 ``` GET: /j/mine/rec_explanation ```
