@@ -222,7 +222,7 @@ none
 
 
 
-<a name="#search_channel"></a>
+<a name="search_channel"></a>
 ### Search Channel (搜索兆赫)
 #### Request
 ``` GET: /j/explore/search ```
