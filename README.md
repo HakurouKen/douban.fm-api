@@ -207,7 +207,7 @@ the hot channel's list
 none
 
 
-<a name="#up_trending_channels"></a>
+<a name="up_trending_channels"></a>
 ### Up Trending Channels (上升最快兆赫)
 #### Request
 ``` GET: /j/explore/up_trending_channels ```
