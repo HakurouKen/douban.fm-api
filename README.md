@@ -339,7 +339,7 @@ the channel list
 ```
 
 
-<a name="#get_channel_info"></a>
+<a name="get_channel_info"></a>
 ### Get Channel Info (获取兆赫信息)
 #### Request
 ``` GET /j/explore/get_channel_info ```
@@ -691,7 +691,7 @@ none
 Add the channel to the favorites.
 #### Parameters
 * *cid*<br/>
-the id of the song
+the id of the channel
 
 #### Response
 the status of the operation
