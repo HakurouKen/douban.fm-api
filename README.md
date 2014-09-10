@@ -1221,15 +1221,14 @@ the songlist and detail infos
 #### Usage
 Get all favorite channels.
 #### Parameters
-* *ck*<br/>
-the key `ck` in your cookie
+None
 
 #### Response
 the channel list
 #### Example
 **Request**
 ```
-	GET: /j/fav_channels?ck=your_ck_key
+	GET: /j/fav_channels
 ```
 **Response**
 ```javascript
