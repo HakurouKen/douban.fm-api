@@ -2,10 +2,15 @@
 
 ## Notice
 **This Project is no longer maintained.**
+**Douban.fm has already update to V2, this document is not working anymore.**
 
+**这个项目已经不再维护。**
+**豆瓣FM 已经升级到V2, 这个文档已经过期。**
 
 ## Explanation
 This is **not** a Douban FM offical API doucmentation. **Please only use it for learning purposes.** All the request is based on the root `http://douban.fm` .
+
+这 **不是** 一个豆瓣 FM 的官方API文档，**请只用于学习目的**。所有请求基于 `http://douban.fm` 域名。
 
 ## Index
 
@@ -52,10 +57,10 @@ This is **not** a Douban FM offical API doucmentation. **Please only use it for 
 
 
 ### [Test or Abandon (测试 or 废弃)](test-or-abandon.md)
-* [Person Channel Tags (个人频道标签)](test-or-abandon#person_channel_tags)
-* [Person Tag Test (个人标签测试)](test-or-abandon#person_tag_test)
-* [Is Tags Song Exists (指定标签歌曲是否存在)](test-or-abandon#is_tags_song_exists)
-* [Channel Personal Tag (个人频道标签)](test-or-abandon#channel_personal_tag)
+* [Person Channel Tags (个人频道标签)](test-or-abandon.md#person_channel_tags)
+* [Person Tag Test (个人标签测试)](test-or-abandon.md#person_tag_test)
+* [Is Tags Song Exists (指定标签歌曲是否存在)](test-or-abandon.md#is_tags_song_exists)
+* [Channel Personal Tag (个人频道标签)](test-or-abandon.md#channel_personal_tag)
 
 ### [Time Machine (豆瓣留声机)](time-machine.md)
 * [Show Time Machine (是否显示Time Machine)](time-machine.md#show_time_machine)
